@@ -1,17 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Node.js (TypeScript) API',
+    title:
+      'Matthäus Mayer - Full-stack Developer & Freelancer - Portfolio & Blog - theMattCode.com',
+    siteUrl: 'https://theMattCode.com'
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-typescript',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gatsby + Node.js (TypeScript) API',
-        short_name: 'Gatbsy + Node.js (TypeScript)',
+        name: 'theMattCode - Portfolio and Blog',
+        short_name: 'theMattCode.com',
         start_url: '/',
-        icon: 'src/images/gatsby-icon.png',
-      },
-    },
-  ],
+        icon: 'src/images/icon.png'
+      }
+    }
+  ]
 };
