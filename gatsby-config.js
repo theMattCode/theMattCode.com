@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title:
-      'Matthäus Mayer - Full-stack Developer & Freelancer - Portfolio & Blog - theMattCode.com',
+    title: 'Matthäus Mayer - Full-stack Developer & Freelancer - Portfolio & Blog - theMattCode.com',
     siteUrl: 'https://theMattCode.com'
   },
   plugins: [
@@ -10,10 +9,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'theMattCode - Portfolio and Blog',
+        name: 'theMattCode.com',
         short_name: 'theMattCode.com',
         start_url: '/',
-        icon: 'src/images/icon.png'
+        icon: 'assets/images/icon.png'
       }
     }
   ]
