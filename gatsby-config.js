@@ -12,7 +12,7 @@ module.exports = {
         name: 'theMattCode.com',
         short_name: 'theMattCode.com',
         start_url: '/',
-        icon: 'assets/images/icon.png'
+        icon: 'assets/img/icon.png'
       }
     }
   ]
