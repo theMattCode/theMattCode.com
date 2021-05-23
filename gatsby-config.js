@@ -7,6 +7,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [require('tailwindcss'), require('./tailwind.config')]
+      }
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'theMattCode.com',

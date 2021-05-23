@@ -1,6 +1,6 @@
 import React from 'react';
 import { SEO } from '../SEO';
-import './DefaultLayout.css';
+import './DefaultLayout.scss';
 
 export const DefaultLayout: React.FC = ({ children }) => {
   return (
