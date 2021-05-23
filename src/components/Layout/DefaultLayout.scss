@@ -1,5 +1,11 @@
 @tailwind base;
 
-html, body {
-	margin: 0;
+@import "src/base";
+
+main {
+	display: grid;
+	align-content: center;
+	text-align: center;
+	margin: 0 auto;
+	min-height: 100vh;
 }
