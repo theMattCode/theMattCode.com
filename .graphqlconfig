@@ -1,0 +1,15 @@
+{
+  "name": "theMattCode.com",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Development": {
+        "url": "http://localhost:8000/__graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
