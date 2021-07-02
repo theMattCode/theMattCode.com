@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
+    'gatsby-plugin-dark-mode',
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -20,6 +21,6 @@ module.exports = {
         start_url: '/',
         icon: 'assets/img/icon.png'
       }
-    }
+    },
   ]
 };
