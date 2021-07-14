@@ -1,13 +1,11 @@
-import React, { PropsWithChildren } from 'react';
-import './Default.scss';
+import React, { ReactNode } from 'react';
 import { SEO } from '../../components/SEO/SEO';
-import { NavBar } from '../../components/PageLayout/NavBar';
+import './Default.scss';
 
-export function Default(props: PropsWithChildren<{}>) {
+export function Default(props: { children: ReactNode }) {
   return (
     <>
       <SEO />
-      <NavBar />
       {props.children}
     </>
   );
