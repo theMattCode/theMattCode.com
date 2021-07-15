@@ -15,5 +15,5 @@ const query = graphql`
 export const SEO: React.FC = () => {
   const data = useStaticQuery(query);
   const { title } = data.site.siteMetadata;
-  return <Helmet title={title} />;
+  return <Helmet title={title} bodyAttributes={{ 'data-theme': 'dark' }} />;
 };
