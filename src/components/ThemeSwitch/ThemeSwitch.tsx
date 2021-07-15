@@ -12,7 +12,6 @@ export function ThemeSwitch({ value }: Props) {
         <input type="checkbox" id="checkbox" />
         <div className="slider round"></div>
       </label>
-      <em>Enable Dark Mode!</em>
     </div>
   );
 }
