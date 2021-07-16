@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-jest:
+    runs-on: ubuntu-latest
+    container:
+      image: node:14
+    steps:
+      - uses: actions/checkout@v2
+      - id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: page-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            page-
+      - run: yarn install
+      - run: yarn test
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: node:14
+    steps:
+      - uses: actions/checkout@v2
+      - id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: page-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            page-
+      - run: yarn install
+      - run: yarn build

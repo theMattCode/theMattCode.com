@@ -1,0 +1,17 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+
+html, body,  {
+	margin: 0;
+	padding: 0;
+	background: var(--color-bg);
+	color: var(--color-contrast-high);
+	height: 100vh;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+div#___gatsby, div#gatsby-focus-wrapper {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
