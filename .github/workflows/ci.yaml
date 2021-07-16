@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-jest:
+    runs-on: ubuntu-latest
+    container:
+      image: node:14
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn test
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: node:14
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn build
