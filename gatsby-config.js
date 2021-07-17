@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
+    'gatsby-plugin-preload-fonts',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
