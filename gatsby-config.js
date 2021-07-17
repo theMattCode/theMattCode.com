@@ -11,14 +11,6 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
     {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Fira Sans'],
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'theMattCode.com',
