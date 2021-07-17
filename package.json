@@ -48,6 +48,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
+    "preload-fonts": "gatsby-preload-fonts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest --env=jsdom"
