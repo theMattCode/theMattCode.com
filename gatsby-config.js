@@ -10,15 +10,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
-    'gatsby-plugin-preload-fonts',
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Fira Sans'],
-        },
-      },
-    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
