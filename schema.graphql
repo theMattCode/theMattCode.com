@@ -515,6 +515,16 @@ type SiteSiteMetadata {
   description: String
   siteUrl: String
   title: String
+  name: String
+  role: String
+  location: String
+  media: [Media]
+}
+
+type Media {
+  name: String
+  handle: String
+  url: String
 }
 
 enum DirectoryFieldsEnum {
