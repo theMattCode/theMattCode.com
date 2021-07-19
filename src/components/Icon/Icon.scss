@@ -1,0 +1,23 @@
+@import "src/styles/colors";
+
+.icon {
+	background-color: var(--color-contrast-medium);
+	display: block;
+}
+
+.icon-s {
+	width: 24px;
+	height: 24px;
+}
+
+.GitHub {
+	mask-image: url(github.svg);
+}
+
+.Twitter {
+	mask-image: url(twitter.svg);
+}
+
+.E-Mail {
+	mask-image: url(email.svg);
+}

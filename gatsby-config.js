@@ -1,10 +1,9 @@
+const metadata = require('./content/metadata');
 module.exports = {
   siteMetadata: {
-    title: 'Matthäus Mayer - Full-stack Developer & Freelancer - Portfolio & Blog - theMattCode.com',
+    title: `${metadata.name} - ${metadata.role} - Portfolio & Blog`,
     siteUrl: 'https://theMattCode.com',
-    name: 'Matthäus Mayer',
-    role: 'Full-stack developer',
-    location: 'Reutlingen, BW, Germany',
+    ...metadata,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
