@@ -1,10 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import './index.scss';
+import { IndexDataQuery } from '../../graphql-types';
 import { Icon } from '../components/Icon/Icon';
 
 const query = graphql`
-  query IndexQuery {
+  query IndexData {
     site {
       siteMetadata {
         name
@@ -21,14 +22,15 @@ const query = graphql`
 `;
 
 const Index: React.FC = () => {
-  const data = useStaticQuery(query);
+  const data = useStaticQuery<IndexDataQuery>(query);
+  const { name, role, location, media } = data.site!.siteMetadata!;
   return (
     <main>
-      <h1 className="bold">{data.site.siteMetadata.name}</h1>
-      <p>{data.site.siteMetadata.role}</p>
-      <div className="italic low-opacity">{data.site.siteMetadata.location}</div>
+      <h1 className="bold">{name}</h1>
+      <p>{role}</p>
+      <div className="italic low-opacity">{location}</div>
       <p className="flex-h">
-        {data.site.siteMetadata.media.map((entry: { name: string; url: string; handle: string }) => (
+        {media!.map((entry: any) => (
           <a href={entry.url} key={entry.name} className="pad-r-m">
             <Icon name={entry.name} />
           </a>
