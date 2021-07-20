@@ -28,7 +28,10 @@ const Index: React.FC = () => {
     <main>
       <h1 className="bold">{name}</h1>
       <p>{role}</p>
-      <div className="italic low-opacity">{location}</div>
+      <div className="italic low-opacity flex-h">
+        <Icon name="Location" />
+        {location}
+      </div>
       <p className="flex-h">
         {media!.map((entry: any) => (
           <a href={entry.url} key={entry.name} className="pad-r-m">
