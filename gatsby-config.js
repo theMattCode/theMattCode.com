@@ -8,6 +8,16 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
+    {
+      resolve: 'gatsby-plugin-graphql-codegen',
+      options: {
+        codegenPlugins: [{ resolve: 'typescript' }],
+        codegenConfig: {
+          avoidOptionals: true,
+          nonOptionalTypename: true,
+        },
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-manifest',
