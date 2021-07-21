@@ -48,8 +48,10 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "preload-fonts": "gatsby-preload-fonts",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "NODE_ENV=test start-storybook -p 6006 -s public",
+    "prestorybook": "yarn run copy-static-queries",
+    "copy-static-queries": "cp -r ./public/page-data/sq/d ./public/static",
+    "build-storybook": "NODE_ENV=test build-storybook -s public",
     "test": "jest --env=jsdom"
   }
 }
