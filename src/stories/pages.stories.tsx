@@ -1,8 +1,7 @@
 import { ComponentStory } from '@storybook/react';
 import React from 'react';
-import { ThemeSwitch } from '../components/ThemeSwitch/ThemeSwitch';
 import { Default } from '../layouts/Default/Default';
-import Index from './index';
+import Index from '../pages';
 
 export default {
   title: 'Pages/Index',
