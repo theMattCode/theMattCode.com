@@ -24,17 +24,21 @@
 }
 
 .GitHub {
-	mask-image: url(github.svg) ;
+	-webkit-mask-image: url(github.svg);
+	mask-image: url(github.svg);
 }
 
 .Twitter {
+	-webkit-mask-image: url(twitter.svg);
 	mask-image: url(twitter.svg);
 }
 
 .E-Mail {
+	-webkit-mask-image: url(email.svg);
 	mask-image: url(email.svg);
 }
 
 .Location {
+	-webkit-mask-image: url(location.svg);
 	mask-image: url(location.svg);
 }
