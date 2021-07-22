@@ -15,4 +15,6 @@ const Template: ComponentStory<typeof Index> = () => (
 );
 
 export const Page = Template.bind({});
-Page.parameters = { chromatic: { delay: 500 } };
+Page.parameters = {
+  chromatic: { viewports: [480, 1200] },
+};
