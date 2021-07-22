@@ -74,3 +74,5 @@ graphql-types.ts
 
 cypress/screenshots
 cypress/videos
+
+.vercel
