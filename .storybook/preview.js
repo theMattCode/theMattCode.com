@@ -8,6 +8,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  chromatic: { pauseAnimationAtEnd: true },
 };
 
 // Gatsby's Link overrides:
