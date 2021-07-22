@@ -37,6 +37,7 @@
     "babel-loader": "^8.2.2",
     "babel-preset-gatsby": "^1.9.0",
     "chromatic": "^5.10.0-canary.0",
+    "cypress": "^8.0.0",
     "eslint": "^7.30.0",
     "eslint-plugin-jest": "^24.3.6",
     "identity-obj-proxy": "^3.0.0",
@@ -48,12 +49,14 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "preload-fonts": "gatsby-preload-fonts",
+    "serve": "gatsby serve",
     "copy-static-queries": "cp -r ./public/page-data/sq/d ./public/static",
     "storybook": "NODE_ENV=test start-storybook -p 6006 -s public",
     "prestorybook": "yarn run copy-static-queries",
     "build-storybook": "NODE_ENV=test build-storybook -s public",
     "prebuild-storybook": "yarn run copy-static-queries",
-    "test": "jest --env=jsdom"
+    "test:jest": "jest --env=jsdom",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   }
 }
