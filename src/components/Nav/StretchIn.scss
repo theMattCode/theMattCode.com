@@ -1,0 +1,39 @@
+@import "src/styles/colors";
+@import "src/styles/fonts";
+@import "src/styles/animations";
+
+@keyframes box-animation {
+	0% {
+		transform: translateX(100vw) scaleX(3);
+	}
+	100% {
+		transform: translateX(0) scaleX(1);
+	}
+}
+
+@keyframes text-animation {
+	0% {
+		transform: scaleX(calc(1 / 3));
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+.stretch-in {
+	display: flex;
+	flex-direction: row;
+	height: 3em;
+	color: var(--color-bg);
+	background-color: var(--color-contrast-higher);
+	align-items: center;
+	padding: 0 1em 0 2.4em;
+	margin-bottom: 1em;
+	animation-name: box-animation;
+	animation-fill-mode: backwards;
+}
+
+.stretch-in-text {
+	animation-name: text-animation;
+	animation-fill-mode: backwards;
+}
