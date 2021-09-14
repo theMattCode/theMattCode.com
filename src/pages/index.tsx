@@ -1,4 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import classNames from 'classnames';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import './index.scss';
 import { IndexDataQuery } from '../../graphql-types';
@@ -30,7 +31,7 @@ const Index: React.FC = () => {
       <main>
         <h1 className="bold">{name}</h1>
         <p>{role}</p>
-        <div className="italic low-opacity flex-h">
+        <div className={classNames('italic', 'low-opacity', 'flex-h')}>
           <Icon name="Location" />
           {location}
         </div>
@@ -43,9 +44,15 @@ const Index: React.FC = () => {
         </p>
       </main>
       <nav>
-        <StretchIn name="Blog" />
-        <StretchIn name="Projects" />
-        <StretchIn name="About" />
+        <Link to="/blog">
+          <StretchIn name="Blog" />
+        </Link>
+        <Link to="/projects">
+          <StretchIn name="Projects" delayInMS="100" />
+        </Link>
+        <Link to="/about">
+          <StretchIn name="About" delayInMS="200" />
+        </Link>
       </nav>
     </>
   );
