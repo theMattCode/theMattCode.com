@@ -1,3 +1,4 @@
+import type { LinksFunction, MetaFunction } from "remix";
 import {
   Links,
   LiveReload,
@@ -6,10 +7,21 @@ import {
   Scripts,
   ScrollRestoration,
 } from "remix";
-import type { MetaFunction } from "remix";
+import styles from "./root.css";
 
 export const meta: MetaFunction = () => {
-  return { title: "Matthäus Mayer - Full-stack developer - " };
+  return { title: "Matthäus Mayer - Full-stack developer" };
+};
+
+export const links: LinksFunction = () => {
+  return [
+    { rel: "icon", type: "image/png", href: "/favicon.png" },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap",
+    },
+    { rel: "stylesheet", href: styles },
+  ];
 };
 
 export default function App() {
@@ -21,7 +33,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body data-theme="dark">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
