@@ -4,6 +4,7 @@
   "description": "",
   "license": "",
   "scripts": {
+    "prebuild": "node -v",
     "build": "remix build",
     "dev": "remix dev",
     "postinstall": "remix setup node"
