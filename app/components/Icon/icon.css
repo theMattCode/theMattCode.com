@@ -1,0 +1,42 @@
+.icon {
+    background-color: var(--color-contrast-medium);
+    display: block;
+}
+
+.icon-s {
+    width: 1em;
+    height: 1em;
+    mask-size: 1em 1em;
+}
+
+.icon-m {
+    width: 1.5em;
+    height: 1.5em;
+    mask-size: 1.5em 1.5em;
+}
+
+.icon-l {
+    width: 2em;
+    height: 2em;
+    mask-size: 2em 2em;
+}
+
+.GitHub {
+    -webkit-mask-image: url(/icons/github.svg);
+    mask-image: url(/icons/github.svg);
+}
+
+.Twitter {
+    -webkit-mask-image: url(/icons/twitter.svg);
+    mask-image: url(/icons/twitter.svg);
+}
+
+.E-Mail {
+    -webkit-mask-image: url(/icons/email.svg);
+    mask-image: url(/icons/email.svg);
+}
+
+.Location {
+    -webkit-mask-image: url(/icons/location.svg);
+    mask-image: url(/icons/location.svg);
+}
