@@ -1,6 +1,7 @@
 import { Icon } from "~/components/Icon/Icon";
 import iconStyles from "~/components/Icon/icon.css";
 import { LinksFunction, LoaderFunction, useLoaderData } from "remix";
+import { LinkDescriptor } from "@remix-run/server-runtime/dist/links";
 
 type SiteMetadata = {
   name: string;
@@ -38,31 +39,13 @@ export const loader: LoaderFunction = (): SiteMetadata => {
   };
 };
 
+const createSVGLink = (href: string):LinkDescriptor => ({ href, rel: "preload", as: "image", type: "image/svg+xml", crossOrigin: "anonymous" })
+
 export const links: LinksFunction = () => [
-  {
-    rel: "preload",
-    href: "/icons/email.svg",
-    as: "image",
-    type: "image/svg+xml",
-  },
-  {
-    rel: "preload",
-    href: "/icons/github.svg",
-    as: "image",
-    type: "image/svg+xml",
-  },
-  {
-    rel: "preload",
-    href: "/icons/location.svg",
-    as: "image",
-    type: "image/svg+xml",
-  },
-  {
-    rel: "preload",
-    href: "/icons/twitter.svg",
-    as: "image",
-    type: "image/svg+xml",
-  },
+  createSVGLink("/icons/email.svg"),
+  createSVGLink("/icons/github.svg"),
+  createSVGLink("/icons/location.svg"),
+  createSVGLink("/icons/twitter.svg"),
   { rel: "stylesheet", href: iconStyles },
 ];
 
