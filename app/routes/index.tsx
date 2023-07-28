@@ -1,7 +1,9 @@
 import { Icon } from "~/components/Icon/Icon";
 import iconStyles from "~/components/Icon/icon.css";
-import { LinksFunction, LoaderFunction, useLoaderData } from "remix";
 import { LinkDescriptor } from "@remix-run/server-runtime/dist/links";
+import { LoaderFunction } from "@remix-run/router";
+import { LinksFunction } from "@remix-run/server-runtime";
+import { useLoaderData } from "@remix-run/react";
 
 type SiteMetadata = {
   name: string;
@@ -39,7 +41,13 @@ export const loader: LoaderFunction = (): SiteMetadata => {
   };
 };
 
-const createSVGLink = (href: string):LinkDescriptor => ({ href, rel: "preload", as: "image", type: "image/svg+xml", crossOrigin: "anonymous" })
+const createSVGLink = (href: string): LinkDescriptor => ({
+  href,
+  rel: "preload",
+  as: "image",
+  type: "image/svg+xml",
+  crossOrigin: "anonymous",
+});
 
 export const links: LinksFunction = () => [
   createSVGLink("/icons/email.svg"),

@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "remix";
+import styles from "./root.css";
 import {
   Links,
   LiveReload,
@@ -6,8 +6,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "remix";
-import styles from "./root.css";
+} from "@remix-run/react";
+import { LinksFunction, MetaFunction } from "@remix-run/server-runtime";
 
 export const meta: MetaFunction = () => {
   return { title: "Matthäus Mayer - Full-stack developer" };
