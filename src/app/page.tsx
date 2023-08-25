@@ -1,3 +1,12 @@
+import { Metadata } from "next";
+
+export function generateMetadata(): Metadata {
+  return {
+    title: "Matthäus Mayer",
+    description: "Portfolio of Matthäus Mayer, full-stack developer",
+  };
+}
+
 export default async function IndexPage() {
   return (
     <>
