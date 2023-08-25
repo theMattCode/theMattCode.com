@@ -1,8 +1,15 @@
+# Dependencies
 node_modules
 
-.cache
+# Vercel
 .vercel
-.output
 
-public/build
-api/_build
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Typescript
+next-env.d.ts
