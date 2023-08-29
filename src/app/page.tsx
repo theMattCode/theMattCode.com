@@ -10,13 +10,13 @@ export function generateMetadata(): Metadata {
 
 export default async function IndexPage() {
   return (
-    <div className="flex flex-col p-6 gap-6">
+    <div className="flex flex-col items-center p-6 gap-6">
       <div className="animate-[fade-in_1s_linear] px-4 border-l border-gray-500 font-light">
         <div className="text-xl">Hi, I'm</div>
         <h1 className="text-4xl uppercase font-bold">Matth&auml;us Mayer</h1>
         <h2>Full-stack developer and creator</h2>
       </div>
-      <div className="opacity-0 animate-[fade-in_1s_linear_1s_forwards] grid grid-cols-2 md:grid-cols-3 gap-4 self-center">
+      <div className="opacity-0 animate-[fade-in_1s_linear_1s_forwards] gap-4">
         <LinkButton
           text="GitHub"
           href="https://www.github.com/theMattCode"
