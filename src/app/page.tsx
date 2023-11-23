@@ -12,7 +12,7 @@ export default async function IndexPage() {
   return (
     <div className="flex flex-col items-center p-6 gap-6">
       <div className="animate-[fade-in_1s_linear] px-4 border-l border-gray-500 font-light">
-        <div className="text-xl">Hi, I'm</div>
+        <div className="text-xl">Hi, I&apos;m</div>
         <h1 className="text-4xl uppercase font-bold">Matth&auml;us Mayer</h1>
         <h2>Full-stack developer and creator</h2>
       </div>
