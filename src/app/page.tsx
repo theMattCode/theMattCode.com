@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { LinkButton } from "./components/button/LinkButton";
+import { LinkButton } from "~/components/button/LinkButton";
 
 export function generateMetadata(): Metadata {
   return {
