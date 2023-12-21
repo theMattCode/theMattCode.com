@@ -18,3 +18,8 @@ next-env.d.ts
 
 # Editor
 .idea
+
+
+# Robots.txt and sitemap is generated during build
+robots.txt
+sitemap.xml
