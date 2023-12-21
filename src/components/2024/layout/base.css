@@ -1,0 +1,114 @@
+:root {
+  --bg-color-values-rgb: 255, 255, 255;
+  --bg-color: rgb(var(--bg-color-values-rgb));
+
+  --primary-color-values-rgb: 0, 0, 0;
+  --primary-color: rgb(var(--primary-color-values-rgb));
+
+  --action-color-values-rgb: 255, 116, 16;
+
+  --sizing-step: 8px;
+
+  --border-bottom-divider: 1px solid rgba(var(--primary-color-values-rgb), 0.1);
+  --gradient: linear-gradient(
+    90deg,
+    rgba(31, 0, 219, 1) 0%,
+    rgba(205, 0, 0, 1) 70%,
+    rgba(var(--action-color-values-rgb), 1) 100%
+  );
+
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color-values-rgb: 0, 0, 0;
+    --primary-color-values-rgb: 255, 255, 255;
+  }
+}
+
+.container {
+  transition: all 0.3s ease-in-out;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+html {
+  /* Use a consistent sensible line-height in all browsers. */
+  line-height: 1.5;
+
+  /* Prevent adjustments of font size after orientation changes in iOS. */
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+textarea {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    ui-sans-serif,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  fill: var(--primary-color);
+
+  /* Remove the margin in all browsers */
+  margin: 0;
+
+  /* Inherit line-height from `html` so users can set them as a class directly on the `html` element. */
+  line-height: inherit;
+}
+
+code,
+kbd,
+samp,
+pre {
+  /* Use the user's configured `mono` font family by default. */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Correct the odd `em` font sizing in all browsers */
+  font-size: 1em;
+}
+
+[data-lastpass-icon-root] {
+  display: none !important;
+}

@@ -1,0 +1,20 @@
+.textfield-input {
+  height: 3em;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0 calc(var(--sizing-step) * 3);
+
+  color: rgba(var(--primary-color-values-rgb), 0.8);
+  background-color: rgba(var(--primary-color-values-rgb), 0.1);
+
+  border: 2px solid rgba(var(--primary-color-values-rgb), 0.2);
+  border-radius: 2em;
+}
+
+.textfield-input:focus-visible {
+  outline: none;
+}
+
+.textfield-input:focus::placeholder {
+  opacity: 0.4;
+}
