@@ -1,16 +1,8 @@
 import React from "react";
-import "./global.css";
 
-type LayoutProps = {
-  children: React.ReactNode;
-};
+import Layout2024 from "~/components/2024/layout/Layout";
+import { LayoutProps } from "~/types";
 
 export default async function Layout({ children }: LayoutProps) {
-  return (
-    <html lang="en">
-      <body>
-        <main>{children}</main>
-      </body>
-    </html>
-  );
+  return <Layout2024>{children}</Layout2024>;
 }

@@ -1,0 +1,21 @@
+.textarea-input {
+  height: 6em;
+  width: 100%;
+  resize: none;
+  font-size: 1rem;
+  padding: calc(var(--sizing-step) * 3);
+
+  color: rgba(var(--primary-color-values-rgb), 0.8);
+  background-color: rgba(var(--primary-color-values-rgb), 0.1);
+
+  border: 2px solid rgba(var(--primary-color-values-rgb), 0.2);
+  border-radius: 2em;
+}
+
+.textarea-input:focus-visible {
+  outline: none;
+}
+
+.textarea-input:focus::placeholder {
+  opacity: 0.4;
+}
