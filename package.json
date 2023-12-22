@@ -15,7 +15,7 @@
     "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^14.0.4",
     "@vercel/node": "^3.0.11",
-    "next": "^14.0.3",
+    "next": "^14.0.4",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.7",
     "react": "^18.2.0",
