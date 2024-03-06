@@ -9,10 +9,10 @@ updates:
       interval: "daily"
     next:
       patterns:
-			  - "next"
-			  - "next-*"
-			  - "@next/*"
-			  - "raw-loader"
+        - "next"
+        - "next-*"
+	- "@next/*"
+        - "raw-loader"
     react:
       patterns:
         - "react"
@@ -20,11 +20,11 @@ updates:
         - "@types/react"
         - "@types/react-dom"
     lint:
-       patterns:
-         - "eslint"
-         - "eslint-*"
-         - "@typescript-eslint/*"
-      typescript:
-        patterns:
-          - "typescript"
-          - "tsconfig-*"
+      patterns:
+        - "eslint"
+        - "eslint-*"
+        - "@typescript-eslint/*"
+    typescript:
+      patterns:
+        - "typescript"
+        - "tsconfig-*"
