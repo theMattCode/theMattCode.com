@@ -11,7 +11,7 @@ updates:
       patterns:
         - "next"
         - "next-*"
-	- "@next/*"
+        - "@next/*"
         - "raw-loader"
     react:
       patterns:
