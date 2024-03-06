@@ -7,24 +7,25 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    next:
-      patterns:
-        - "next"
-        - "next-*"
-        - "@next/*"
-        - "raw-loader"
-    react:
-      patterns:
-        - "react"
-        - "react-dom"
-        - "@types/react"
-        - "@types/react-dom"
-    lint:
-      patterns:
-        - "eslint"
-        - "eslint-*"
-        - "@typescript-eslint/*"
-    typescript:
-      patterns:
-        - "typescript"
-        - "tsconfig-*"
+    groups:
+      next:
+        patterns:
+          - "next"
+          - "next-*"
+          - "@next/*"
+          - "raw-loader"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+      lint:
+        patterns:
+          - "eslint"
+          - "eslint-*"
+          - "@typescript-eslint/*"
+      typescript:
+        patterns:
+          - "typescript"
+          - "tsconfig-*"
